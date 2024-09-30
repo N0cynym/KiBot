@@ -496,7 +496,7 @@ def main():
     # Now we have the debug level set we can check (and optionally inform) KiCad info
     logger.debug('Start of initialization')
     if args.gui:
-        from .GUI.gui import show_splash
+        from kibot.GUI.gui import show_splash
         show_splash(initialization, args)
     else:
         initialization(args)
