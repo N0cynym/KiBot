@@ -65,3 +65,6 @@ jobs:
         with:
           args: |
             package/${{needs.build.outputs.DEB_NAME}}
+
+      - name: Download all workflow run artifacts
+        uses: actions/download-artifact@v4
